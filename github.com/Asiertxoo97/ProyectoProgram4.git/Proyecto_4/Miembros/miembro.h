@@ -14,10 +14,10 @@ typedef struct{
 
 }Miembro;
 
-void añadirMiembro();
+void añadirMiembro(Miembro * miembro);
 
-void borrarMiembro();
+void borrarMiembro(Miembro * miembro);
 
-void modificarMiembro();
+void modificarMiembro(Miembro * miembro);
 
-void mostrarMiembro();
+void mostrarMiembro(Miembro miembro[]);

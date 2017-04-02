@@ -21,7 +21,7 @@ typedef struct{
 }Banda;
 void registrarBanda();
 
-char * mostrarDatosBanda();
+void mostrarDatosBanda();
 
 void modificarBanda();
 

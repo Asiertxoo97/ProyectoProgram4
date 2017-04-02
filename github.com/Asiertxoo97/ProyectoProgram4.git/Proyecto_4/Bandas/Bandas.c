@@ -7,10 +7,27 @@
 
 #include "Bandas.h"
 
-void nuevaBanda()
+
+
+void registrarBanda()
 {
 
+}
+
+void mostrarDatosBanda()
+{
 
 
 }
 
+void modificarBanda()
+{
+
+
+}
+
+void mostrarBanda()
+{
+
+
+}
