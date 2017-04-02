@@ -14,7 +14,7 @@ typedef struct{
 
 }Miembro;
 
-void añadirMiembro(Miembro * miembro);
+void anyadirMiembro(Miembro * miembro);
 
 void borrarMiembro(Miembro * miembro);
 

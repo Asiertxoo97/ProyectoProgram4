@@ -79,6 +79,9 @@ void modificarMiembro(Miembro * miembro,char * nombre)
 	int instrumento;
 	char opciones[5];
 	int opcion;
+	char nombreNuevo[20];
+	char apellidoNuevo[20];
+
 
 	int i;
 	for(i=0 ; miembro[i].nombre == nombre;i++){
@@ -95,10 +98,17 @@ void modificarMiembro(Miembro * miembro,char * nombre)
 			switch(opcion){
 			case 1:
 				printf("Inserte nuevo nombre: ");
+				fflsuh(stdout);
+				fgets(nombreNuevo,20,stdin);
+				printf("\n");
 
 				break;
 			case 2:
 				printf("Inserte nuevo apellido: ");
+				fflsuh(stdout);
+				fgets(apellidoNuevo,20,stdin);
+
+				printf("\n");
 					break;
 			case 3:
 				printf("Inserte nuevo instrumento: ");
@@ -111,8 +121,8 @@ void modificarMiembro(Miembro * miembro,char * nombre)
 					fgets(inst,stdin);
 					scanf(inst,"%i",&instrumento);
 
-					miembro -> nombre= nombre;
-					miembro -> apellido = apellido;
+					miembro -> nombre= nombreNuevo;
+					miembro -> apellido = apellidoNuevo;
 
 					switch (instrumento){
 

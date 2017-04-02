@@ -13,8 +13,8 @@ typedef struct{
 }Cancion;
 
 
-void añadirCancion();
+int añadirCancion(Cancion * cancion);
 
-void borrarCancion();
+void borrarCancion(Cancion * cancion);
 
-void mostrarCancion();
+void mostrarCancion(Cancion cancion[],int numCanciones);
