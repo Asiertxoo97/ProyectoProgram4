@@ -64,16 +64,87 @@ void añadirMiembro(Miembro * miembro)
 	printf("\n");
 }
 
-void borrarMiembro(Miembro * miembro)
+void borrarMiembro(Miembro * miembro, char * nombre)
 {
 
 
 
 }
 
-void modificarMiembro(Miembro * miembro)
+void modificarMiembro(Miembro * miembro,char * nombre)
 {
+	char opciones[5];
+	int opcion;
+	char inst[5];
+	int instrumento;
+	char opciones[5];
+	int opcion;
 
+	int i;
+	for(i=0 ; miembro[i].nombre == nombre;i++){
+
+			printf("\t¿Qué desea modificar? \n");
+			printf("1-Nombre.\n");
+			printf("2-Apellido.\n");
+			printf("3-Instrumento.\n");
+			printf("Su opción: ");
+			fflush(stdout);
+			fgets(opciones,5,stdin);
+			scaanf(opciones,"%i",&opcion);
+
+			switch(opcion){
+			case 1:
+				printf("Inserte nuevo nombre: ");
+
+				break;
+			case 2:
+				printf("Inserte nuevo apellido: ");
+					break;
+			case 3:
+				printf("Inserte nuevo instrumento: ");
+				printf("1-Voz.");
+					printf("2-Guitarra");
+					printf("3-Bajo");
+					printf("4-Bateria");
+					printf("Elija una opción: ");
+					fflush(stdout);
+					fgets(inst,stdin);
+					scanf(inst,"%i",&instrumento);
+
+					miembro -> nombre= nombre;
+					miembro -> apellido = apellido;
+
+					switch (instrumento){
+
+					case 1:							//Miembro canta
+						miembro -> instrumento= "Voz";
+						break;
+
+					case 2:							//Miembro toca guitarra
+						miembro -> instrumento= "Guitarra";
+						break;
+
+					case 3:							//Miembro toca bajo
+						miembro -> instrumento= "Bajo";
+						break;
+
+					case 4:							//Miembro toca bateria
+						miembro -> instrumento= "Batería";
+						break;
+
+
+					}
+					printf("\n");
+
+					break;
+
+
+
+			}
+
+
+
+	}
 
 
 }
